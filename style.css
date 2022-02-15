@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Romanesco&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+body {
+  background: rgb(151, 150, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(151, 150, 179, 1) 0%,
+    rgba(153, 158, 232, 1) 100%,
+    rgba(151, 144, 189, 1) 100%
+  );
 }
-
+#border {
+  margin: 0;
+}
 #grilla {
   display: grid;
   grid-template-areas:
@@ -20,7 +27,10 @@
   height: 100vh;
   margin: 0;
 }
-
+li:hover {
+  background-color: purple;
+  color: black;
+}
 header {
   grid-area: header;
   display: flex;
@@ -46,14 +56,17 @@ aside {
 .formatoproductos {
   font-size: 30px;
   line-height: 150%;
-  border-color: black;
-  background-color: black;
+  /* border-color: black; */
+  /* background-color: black; */
 }
 a {
   padding: 8px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-family: "Gideon Roman", cursive;
+}
+a:hover {
+  color: black;
 }
 ul {
   display: flex;
@@ -62,6 +75,7 @@ ul {
   flex-direction: row;
   padding: 1px;
   overflow: hidden;
+  list-style-type: none;
 }
 li {
   padding-left: 20px;
@@ -88,109 +102,19 @@ li {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 1920px) {
-  html {
-    background: rgb(58, 180, 179);
-    background: linear-gradient(
-      90deg,
-      rgba(58, 180, 179, 1) 0%,
-      rgba(29, 169, 253, 1) 50%,
-      rgba(0, 255, 252, 1) 100%
-    );
-  }
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
 }
 
-@media screen and (max-width: 760px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav productos publicidad"
-      "nav servicios publicidad"
-      "footer footer footer";
-    grid-template-rows: 30% 25% 25% 20%;
-    grid-template-columns: 15% 70% 15%;
-    grid-row-gap: 1fr;
-    grid-column-gap: 1fr;
-    height: 100vh;
-    margin: 0;
-  }
-  #servicios {
-    display: flex;
-    justify-content: center;
-    font-family: "Gideon Roman", cursive;
-    font-size: 20px;
-    text-align: center;
-    padding: 35px 30px 4px 30px;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    padding: 1px;
-  }
-  li {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  a {
-    padding: 6px;
-    color: white;
-    text-decoration: none;
-    font-family: "Gideon Roman", cursive;
-  }
-  .formatoproductos {
-    font-size: 20px;
-    line-height: 150%;
-    border-color: black;
-    background-color: black;
-  }
+@media (min-width: 768px) {
 }
-@media screen and (max-width: 320px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav productos publicidad"
-      "nav servicios publicidad"
-      "footer footer footer";
-    grid-template-rows: 30% 25% 25% 20%;
-    grid-template-columns: 15% 70% 15%;
-    grid-row-gap: 1fr;
-    grid-column-gap: 1fr;
-    height: 100vh;
-    margin: 0;
-  }
-  #servicios {
-    display: flex;
-    justify-content: center;
-    font-family: "Gideon Roman", cursive;
-    font-size: 10px;
-    text-align: center;
-    padding: 12px 10px 1px 12px;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    padding: 1px;
-  }
-  li {
-    padding-left: auto;
-    padding-right: auto;
-  }
-  a {
-    padding: 3px;
-    color: white;
-    text-decoration: none;
-    font-family: "Gideon Roman", cursive;
-  }
-  .formatoproductos {
-    font-size: 7px;
-    line-height: 150%;
-    border-color: black;
-    background-color: black;
-  }
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }
