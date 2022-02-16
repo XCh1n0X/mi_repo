@@ -102,6 +102,9 @@ li {
   max-width: 100%;
   height: auto;
 }
+.formatolateral {
+  background-color: purple;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
