@@ -105,6 +105,9 @@ li {
 .formatolateral {
   background-color: purple;
 }
+.grid2 {
+  justify-content: center;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
