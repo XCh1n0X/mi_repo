@@ -8,6 +8,11 @@ $fuentegeneral: 30px;
   justify-content: $justificar;
   font-size: $sizefuente;
 }
+$colores: {
+	"primario": #ff5400,
+	"secundario": #46424C,
+	"texto": #060713
+}
 body {
   background: rgb(151, 150, 179);
   background: linear-gradient(
