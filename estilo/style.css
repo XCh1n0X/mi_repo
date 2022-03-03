@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Romanesco&display=swap");
 body {
   background: #9796b3;
+  background: -webkit-gradient(linear, left top, right top, from(#9796b3), color-stop(100%, #999ee8), to(#9790bd));
   background: linear-gradient(90deg, #9796b3 0%, #999ee8 100%, #9790bd 100%);
 }
 
@@ -10,10 +11,13 @@ body {
 }
 
 #grilla {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "header header header" "nav productos publicidad" "nav servicios publicidad" "footer footer footer";
-  grid-template-rows: 200px 40px 1fr 1px;
-  grid-template-columns: 15% 70% 15%;
+      grid-template-areas: "header header header" "nav productos publicidad" "nav servicios publicidad" "footer footer footer";
+  -ms-grid-rows: 200px 40px 1fr 1px;
+      grid-template-rows: 200px 40px 1fr 1px;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
@@ -26,7 +30,12 @@ li:hover {
 }
 
 header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   max-width: 30%;
@@ -34,21 +43,34 @@ header {
 }
 
 footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
   height: auto;
 }
 
 section#servicios {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: servicios;
 }
 
 nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: nav;
 }
 
 aside {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
   grid-area: publicidad;
 }
 
@@ -69,10 +91,19 @@ a:hover {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1px;
   overflow: hidden;
   list-style-type: none;
@@ -84,11 +115,16 @@ li {
 }
 
 #servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  font-family: "Gideon Roman", cursive;
-  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Gideon Roman", cursive;
   padding: 35px 30px 4px 30px;
 }
 
@@ -107,7 +143,8 @@ li {
 }
 
 .grid2 {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
