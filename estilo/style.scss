@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Romanesco&display=swap");
 $paddingli: 20px;
-$gridgap: 10px;
+$gridgap: 0px;
 $fuentegeneral: 30px;
 @mixin FuenteEstilo($alineacion, $justificar, $sizefuente) {
   text-align: $alineacion;
