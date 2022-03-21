@@ -6,6 +6,10 @@ body {
   background: linear-gradient(90deg, #9796b3 0%, #999ee8 100%, #9790bd 100%);
 }
 
+#border {
+  margin: 0;
+}
+
 #grilla {
   display: -ms-grid;
   display: grid;
@@ -71,9 +75,6 @@ aside {
 }
 
 .formatoproductos {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: productos;
   font-size: 30px;
   line-height: 150%;
 }
