@@ -18,9 +18,7 @@ body {
     rgba(151, 144, 189, 1) 100%
   );
 }
-#border {
-  margin: 0;
-}
+
 #grilla {
   display: grid;
   grid-template-areas:
@@ -62,6 +60,7 @@ aside {
   grid-area: publicidad;
 }
 .formatoproductos {
+  grid-area: productos;
   font-size: $fuentegeneral;
   line-height: 150%;
 }
