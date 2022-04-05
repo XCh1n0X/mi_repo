@@ -142,12 +142,7 @@ li {
   color: white;
 }
 
-.formatologo {
-  max-width: 100%;
-  height: auto;
-}
-
-.formulariocontacto {
+.formatologo, .formulariocontacto, img {
   max-width: 100%;
   height: auto;
 }
@@ -163,11 +158,6 @@ li {
   background-image: url("fondoparallax.jpg");
   background-size: cover;
   background-attachment: fixed;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 @media (max-width: 575.98px) {

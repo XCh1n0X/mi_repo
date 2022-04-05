@@ -110,8 +110,8 @@ li {
   height: auto;
 }
 .formulariocontacto {
-  max-width: 100%;
-  height: auto;
+  @extend.formatologo;
+  
 }
 
 .grid2 {
@@ -124,8 +124,7 @@ li {
   background-attachment: fixed;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  @extend.formatologo;
 }
 // Distintas mediaqueries para que se adapte lo mejor posible a las diferentes resoluciones
 @media (max-width: 575.98px) {
