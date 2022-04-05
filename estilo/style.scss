@@ -7,12 +7,14 @@ $fuentegeneral: 30px;
   text-align: $alineacion;
   justify-content: $justificar;
   font-size: $sizefuente;
+  // Variables para Formatear el texto como es debido
 }
 
 body {
   background-image: url(../imagenes/fondoparallax.jpg);
   background-attachment: fixed;
   background-position: center;
+  // Para que el fondo quede fijo (Parallax)
 }
 
 #grilla {
@@ -28,12 +30,14 @@ body {
   grid-column-gap: $gridgap;
   height: 100vh;
   margin: 0;
+  // Se definen las grillas con su formato
 }
 li:hover {
   background-color: purple;
   color: black;
+  // Para que cambie el color cuando se pase el puntero del mouse por opciones del UL
 }
-
+// Se define el formato de los distintos sectores de la grid:
 header {
   grid-area: header;
   display: flex;
@@ -123,6 +127,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+// Distintas mediaqueries para que se adapte lo mejor posible a las diferentes resoluciones
 @media (max-width: 575.98px) {
   #servicios {
     font-size: smaller;
